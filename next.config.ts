@@ -1,11 +1,11 @@
-/** @type {import('next').NextConfig} */
 import bundleAnalyzer from '@next/bundle-analyzer';
+import { NextConfig } from 'next';
 
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true'
 });
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false
 };
